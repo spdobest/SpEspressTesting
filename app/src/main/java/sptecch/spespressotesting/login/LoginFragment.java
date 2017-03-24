@@ -40,15 +40,14 @@ public class LoginFragment extends BaseFragment implements LoginScreenContract.V
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button button = (Button)view.findViewById(R.id.button_login);
+        Button button = (Button) view.findViewById(R.id.button_login);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mUserActionListener.loginButtonClick();
             }
         });
-
-        mProgressBar = (ProgressBar)view.findViewById(R.id.progress_bar_login);
+        mProgressBar = (ProgressBar) view.findViewById(R.id.progress_bar_login);
     }
 
     @Override
